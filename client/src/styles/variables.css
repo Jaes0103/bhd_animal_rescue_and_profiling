@@ -1,0 +1,129 @@
+/* Bantay Hayop Davao - Design System Variables */
+
+:root {
+  /* Primary Brand Colors - Bantay Hayop Davao Purple */
+  --primary-purple: #7c3aed;
+  --primary-purple-dark: #6d28d9;
+  --primary-purple-light: #a78bfa;
+
+  --secondary-navy: #1e3a8a;
+  --secondary-navy-dark: #1e40af;
+  --secondary-navy-light: #3b82f6;
+
+  /* Status Colors */
+  --success-green: #27ae60;
+  --success-green-dark: #229954;
+  --success-green-light: #2ecc71;
+
+  --warning-orange: #f39c12;
+  --warning-orange-dark: #e67e22;
+  --warning-orange-light: #f8b739;
+
+  --error-red: #e74c3c;
+  --error-red-dark: #c0392b;
+  --error-red-light: #ec7063;
+
+  --info-blue: #3498db;
+  --info-blue-dark: #2874a6;
+  --info-blue-light: #5dade2;
+
+  /* Role Colors */
+  --role-admin: #e74c3c;
+  --role-staff: #3498db;
+  --role-driver: #f39c12;
+  --role-volunteer: #9b59b6;
+  --role-public: #95a5a6;
+
+  /* Animal Status Colors */
+  --status-quarantine: #f39c12;
+  --status-observation: #3498db;
+  --status-treatment: #e74c3c;
+  --status-medical-hold: #c0392b;
+  --status-available: #27ae60;
+  --status-pending: #9b59b6;
+  --status-adopted: #27ae60;
+  --status-fostered: #3498db;
+  --status-deceased: #7f8c8d;
+
+  /* Neutral Colors */
+  --white: #ffffff;
+  --gray-50: #f9f9f9;
+  --gray-100: #f5f5f5;
+  --gray-200: #ecf0f1;
+  --gray-300: #e0e0e0;
+  --gray-400: #bdc3c7;
+  --gray-500: #95a5a6;
+  --gray-600: #7f8c8d;
+  --gray-700: #555555;
+  --gray-800: #34495e;
+  --gray-900: #2c3e50;
+  --black: #000000;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f6fa;
+  --bg-tertiary: #f9f9f9;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+
+  /* Text Colors */
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --text-tertiary: #95a5a6;
+  --text-inverse: #ffffff;
+
+  /* Border Colors */
+  --border-light: #ecf0f1;
+  --border-medium: #ddd;
+  --border-dark: #bdc3c7;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 10px 25px rgba(0, 0, 0, 0.2);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-2xl: 3rem;
+
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+  /* Z-index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+}

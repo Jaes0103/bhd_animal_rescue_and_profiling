@@ -1,0 +1,82 @@
+.medical-record-modal {
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.medical-record-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.medicine-entry {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  align-items: flex-start;
+}
+
+.medicine-fields {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.medicine-name-input,
+.medicine-instructions-input {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.medicine-name-input {
+  font-weight: 500;
+}
+
+.remove-medicine-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s;
+  line-height: 1;
+  padding: 0;
+}
+
+.remove-medicine-btn:hover {
+  background: #cc0000;
+}
+
+.add-medicine-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  align-self: flex-start;
+}
+
+.add-medicine-btn:hover {
+  background: #218838;
+}
+
+@media (max-width: 768px) {
+  .medical-record-modal {
+    max-width: 95%;
+  }
+
+  .medicine-fields {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,86 @@
+.foster-page {
+  padding: 2rem 0;
+  min-height: calc(100vh - 80px);
+}
+
+.fosters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.foster-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.foster-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.foster-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.foster-header h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--secondary-navy);
+}
+
+.foster-species {
+  text-transform: capitalize;
+  color: var(--gray-600);
+}
+
+.foster-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.foster-section {
+  padding: 0.75rem;
+  background: var(--gray-50);
+  border-radius: 0.5rem;
+}
+
+.foster-section h4 {
+  font-size: 0.875rem;
+  color: var(--gray-700);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.foster-section p {
+  font-size: 0.9375rem;
+  color: var(--gray-800);
+  margin: 0.25rem 0;
+}
+
+.foster-duration {
+  color: var(--primary-purple);
+  font-weight: 600;
+}
+
+.foster-return {
+  border-left: 4px solid var(--warning);
+}
+
+.foster-assigned {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .fosters-grid {
+    grid-template-columns: 1fr;
+  }
+}

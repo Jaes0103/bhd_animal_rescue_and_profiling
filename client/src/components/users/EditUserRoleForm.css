@@ -1,0 +1,65 @@
+.edit-role-modal {
+  max-width: 500px;
+}
+
+.edit-role-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.user-info {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #3498db;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-row strong {
+  color: #555;
+  min-width: 120px;
+}
+
+.info-row .badge {
+  margin-left: 0.5rem;
+}
+
+.confirmation-message {
+  background: #fff3cd;
+  border-left: 3px solid #ffc107;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.confirmation-message p {
+  margin: 0;
+  color: #856404;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .edit-role-modal {
+    max-width: 95%;
+  }
+
+  .info-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-row strong {
+    min-width: auto;
+  }
+}

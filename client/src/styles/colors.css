@@ -1,0 +1,60 @@
+/* Bantay Hayop Davao Brand Colors */
+:root {
+  /* Primary Colors - from logo */
+  --primary-navy: #003D5C;
+  --primary-red: #E74C3C;
+  --primary-blue: #5B7DAD;
+
+  /* Shades of Primary Navy */
+  --navy-dark: #002D45;
+  --navy-light: #004D73;
+  --navy-lighter: #005D8A;
+
+  /* Shades of Primary Red */
+  --red-dark: #C0392B;
+  --red-light: #EC7063;
+  --red-lighter: #F5B7B1;
+
+  /* Shades of Primary Blue */
+  --blue-dark: #3D5A8A;
+  --blue-light: #7A9AC9;
+  --blue-lighter: #A8C0E0;
+
+  /* Status Colors */
+  --status-success: #27AE60;
+  --status-warning: #F39C12;
+  --status-danger: var(--primary-red);
+  --status-info: var(--primary-blue);
+
+  /* Neutral Colors */
+  --gray-100: #F8F9FA;
+  --gray-200: #E9ECEF;
+  --gray-300: #DEE2E6;
+  --gray-400: #CED4DA;
+  --gray-500: #ADB5BD;
+  --gray-600: #6C757D;
+  --gray-700: #495057;
+  --gray-800: #343A40;
+  --gray-900: #212529;
+
+  /* Text Colors */
+  --text-primary: var(--navy-dark);
+  --text-secondary: var(--gray-600);
+  --text-light: var(--gray-500);
+  --text-white: #FFFFFF;
+
+  /* Background Colors */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: var(--gray-100);
+  --bg-tertiary: var(--gray-200);
+
+  /* Border Colors */
+  --border-light: var(--gray-300);
+  --border-medium: var(--gray-400);
+  --border-dark: var(--gray-600);
+
+  /* Shadow */
+  --shadow-sm: 0 1px 3px rgba(0, 61, 92, 0.12);
+  --shadow-md: 0 4px 8px rgba(0, 61, 92, 0.15);
+  --shadow-lg: 0 8px 16px rgba(0, 61, 92, 0.18);
+}

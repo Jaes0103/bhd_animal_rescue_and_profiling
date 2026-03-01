@@ -1,0 +1,263 @@
+/* Import Design System */
+@import './variables.css';
+@import './globals.css';
+
+/* Import brand colors */
+@import './colors.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Brand colors are now imported from colors.css */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global styles */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-navy);
+}
+
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--blue-dark);
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+input, textarea, select {
+  font-family: inherit;
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: var(--primary-navy);
+  color: var(--text-white);
+}
+
+.btn-primary:hover {
+  background: var(--navy-light);
+}
+
+.btn-secondary {
+  background: var(--primary-blue);
+  color: var(--text-white);
+}
+
+.btn-secondary:hover {
+  background: var(--blue-dark);
+}
+
+.btn-danger {
+  background: var(--primary-red);
+  color: var(--text-white);
+}
+
+.btn-danger:hover {
+  background: var(--red-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary-navy);
+  color: var(--primary-navy);
+}
+
+.btn-outline:hover {
+  background: var(--primary-navy);
+  color: var(--text-white);
+}
+
+.card {
+  background: var(--bg-primary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge-success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.badge-danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.badge-info {
+  background: var(--blue-lighter);
+  color: var(--blue-dark);
+}
+
+.badge-purple {
+  background: var(--blue-lighter);
+  color: var(--primary-navy);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-navy);
+  box-shadow: 0 0 0 3px rgba(0, 61, 92, 0.1);
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-error {
+  color: var(--error);
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid var(--gray-300);
+  border-top-color: var(--primary-navy);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Toast notifications - Unified Design */
+.Toastify__toast {
+  border-radius: var(--radius-md);
+  font-family: var(--font-family);
+  box-shadow: var(--shadow-lg);
+  font-size: var(--font-size-base);
+}
+
+.Toastify__toast--success {
+  background: var(--success-green);
+}
+
+.Toastify__toast--error {
+  background: var(--error-red);
+}
+
+.Toastify__toast--warning {
+  background: var(--warning-orange);
+}
+
+.Toastify__toast--info {
+  background: var(--info-blue);
+}
+
+.Toastify__progress-bar--success {
+  background: var(--success-green-dark);
+}
+
+.Toastify__progress-bar--error {
+  background: var(--error-red-dark);
+}
+
+.Toastify__progress-bar--warning {
+  background: var(--warning-orange-dark);
+}
+
+.Toastify__progress-bar--info {
+  background: var(--info-blue-dark);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9375rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}

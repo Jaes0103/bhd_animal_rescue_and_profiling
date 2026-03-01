@@ -1,0 +1,43 @@
+.main-layout {
+  display: flex;
+  min-height: 100vh;
+  background: var(--bg-secondary);
+}
+
+.main-content-wrapper {
+  flex: 1;
+  margin-left: 300px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* When sidebar is collapsed on desktop */
+@media (min-width: 769px) {
+  .sidebar.collapsed ~ .main-content-wrapper {
+    margin-left: 80px;
+  }
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .main-content-wrapper {
+    margin-left: 0;
+  }
+
+  .main-content {
+    padding: 1rem;
+    padding-top: 70px;
+  }
+}
+
+/* Ensure content doesn't overflow */
+.main-content > * {
+  max-width: 100%;
+}

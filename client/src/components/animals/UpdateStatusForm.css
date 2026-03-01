@@ -1,0 +1,71 @@
+.status-update-modal {
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.status-update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.current-status-info {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 6px;
+  border-left: 3px solid #3498db;
+}
+
+.current-status-info p {
+  margin: 0;
+  color: #555;
+}
+
+.current-status-info .badge {
+  background: #3498db;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.adoption-fee-group {
+  background: #e8f4fd;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #3498db;
+}
+
+.form-warning {
+  background: #fff3cd;
+  border-left: 3px solid #ffc107;
+  padding: 1rem;
+  border-radius: 4px;
+  color: #856404;
+  font-size: 0.9rem;
+}
+
+.foster-fields-section {
+  background: #f0f8ff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #5B7DAD;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .status-update-modal {
+    max-width: 95%;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
